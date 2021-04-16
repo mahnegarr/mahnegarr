@@ -1,0 +1,170 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.color-cool {
+    color: #077dfe;
+}
+
+.color-warm {
+    color: #ff7a00;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.app-container {
+    background-color: var(--bg-color);
+    border-radius: 40px;
+    box-shadow: -2px -2px 4px #ffffff, 50px 50px 50px rgba(0, 0, 0, 0.25);
+    display: block;
+    flex: 1;
+    min-height: 500px;
+    max-width: 350px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.app-top-bar {
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.app-heading {
+    color: var-(--font-color);
+    display: block;
+    flex: 1;
+    font-size: 28px;
+    font-weight: 800px;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    border: none;
+}
+button:focus{
+    border: none;
+    outline: 0;
+}
+[class*="btn"]{
+    color: var-(--font-color);
+    position: relative;
+    border-radius: 15px;
+    background: var-(--button-bg-color);
+    font-weight: 700px;
+    transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var-(--button-shadow);
+    cursor: pointer;
+
+}
+.link-btn{
+    
+    color: #067cf8;
+    display: block;
+    font-size: 17px;
+    margin: 30px 0 0;
+    padding: 20px 0;
+    width: 100%;
+}
+.small-btn {
+    color: #6d6e74;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.2);
+}
+.large-btn{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+    width: 45%;
+}
+svg{
+    margin-bottom: 40px;
+    width: 30px;
+}
+.dial-btn{
+    border-radius: 50%;
+    display: flex;
+    height: 270px;
+    margin: 35px auto;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+}
+.dial-top-btn{
+    background: var-(--button-bg-color);
+    box-shadow: var-(--button-shadow);
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 5;
+}
+
+.dial-lable-btn{
+    color: #067cf8;
+    font-size: 28px;
+    fill: #067cf8;
+    position: relative;
+    z-index: 10;
+}
+.dial-spoke-btn{
+    background-color: rgba(96, 171, 254, 0.6);
+    display: block;
+    height: 2px;
+    width: 83%;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 5;
+    top: 50%;
+
+}
+
+.button-dial-spoke:nth-child(2){transform: rotate(30deg);}
+.button-dial-spoke:nth-child(3){transform: rotate(60deg);}
+.button-dial-spoke:nth-child(4){transform: rotate(90deg);}
+.button-dial-spoke:nth-child(5){transform: rotate(120deg);}
+.button-dial-spoke:nth-child(6){transform: rotate(150deg);}
+
+.block-btn{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 24px;
+    width: 100%;
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.2);
+  
+}
+span{
+    font-size: 16px;
+}
+.period{
+    color: #6d6e74;
+}
+
+.flex-btn-container{
+    display: flex;
+    justify-content: space-between;
+}
