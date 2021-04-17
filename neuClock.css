@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282828;
+}
+
+.clock{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    border: 5px solid #191919;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: url(http://samuel-garcia.site/img/clock-sam.png);
+    background-size: cover;
+    box-shadow: -6px -6px 9px rgba(67, 67, 67, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+    inset -4px -4px 10px rgba(67, 67,67, 0.5),
+    4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.clock::before{
+    content: "";
+    width: 15px;
+    position: absolute;
+    height: 15px;
+    background: #747474;
+    border-radius: 50%;
+    z-index: 999;
+}
+.clock .hour,
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+.clock .hour, .hr{
+    width: 160px;
+    height: 160px;
+}
+.clock .min, .mn{
+    width: 190px;
+    height: 190px;
+}
+.clock .sec, .sc{
+    width: 230px;
+    height: 230px;
+}
+
+.hr::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 88px;
+    background: #ffb510;
+    z-index: 9;
+    border-radius: 6px 6px 0 0;
+}
+.mn::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background:#8b8b8b ;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+.sc::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+    background: #e5e5e5;
+    z-index: 11;
+}
+.hr,.mn,.sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+}
