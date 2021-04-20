@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vh;
+    background: #262728;
+    color: #ea4040;
+}
+
+.clock{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #323235;
+    border: 5px solid currentColor;
+    box-shadow: 0px 0px 15px #000000cc;
+}
+
+.clock .center{
+    background: currentColor;
+    position: absolute;
+    transform-origin: 50% 100%;
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+}
+
+.clock .hour{
+    background: currentColor;
+    position: absolute;
+    transform-origin: 50% 100%;
+}
