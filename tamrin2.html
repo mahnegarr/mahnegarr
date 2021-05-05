@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+</head>
+
+<body>
+    <!-- <p>Mahnegar mhd</p>
+    <p>Majid mhd</p>
+    <p>Simin</p>
+    <p>Parsa</p> -->
+    <button onclick="myFunction()">Click me!</button>
+    <p id="demo"></p>
+    <!-- <button onclick="myFunc()" ondblclick="normal()">Click me!</button> -->
+</body>
+<script>
+    //     var x = document.getElementsByTagName("p");
+    //     document.getElementById("demo").innerHTML = x[1].innerHTML;
+
+    //     function myFunc() {
+    //         p = document.getElementsByTagName("p");
+    //         for (var i = 0; i < p.length; i++){
+    //             p[i].style.color="red";
+    //         }
+    //     }
+    // function normal(){
+    //     p = document.getElementsByTagName("p");
+    //         for (var i = 0; i < p.length; i++){
+    //             p[i].style.color="black";
+    //         }
+    // }
+
+    // var w = window.innerWidth
+    //     || document.documentElement.clientWidth
+    //     || document.body.clientWidth;
+
+    // var h = window.innerHeight
+    //     || document.documentElement.clientHeight
+    //     || document.body.clientHeight;
+
+    // document.getElementById("demo").innerHTML = "window width is :" + w + "," +
+    //     "window height is :" + h;
+
+    // document.getElementById("demo").innerHTML= screen.availWidth;
+    // document.getElementById("demo").innerHTML= screen.availHeight;
+
+    // document.getElementById("demo").innerHTML=
+    // window.location.href;
+    // function myFunction() {
+    //     var txt = "";
+    //     if (confirm("You clicked it")) {
+    //         txt = ":)";
+    //     }
+    //     else {
+    //             txt = "you cancled it";
+    //         }
+    // document.getElementById("demo").innerHTML=txt;
+    // }
+    function myFunction() {
+        var txt = "";
+        var person = prompt("please enter your name:");
+        if (person == null || person == "") {
+            txt = "you didn't enter your name!!";
+        } else {
+            txt = "hello " + person;
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+
+</script>
+
+</html>
